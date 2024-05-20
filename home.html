@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отправка данных</title>
+</head>
+<body>
+    <form id="dataForm" action="send_email.php" method="post">
+        <label name="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label name="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label name="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" name="send" value="Отправить">
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
