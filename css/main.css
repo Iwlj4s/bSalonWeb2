@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url(../fonts/Exo2-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Exo2';
+    font-size: 2.7vh;
+    background-color: #FFCBDB;
+
+    color:#39262D;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+}
+
+/* SELECTION SETTINGS */
+::selection {
+    background: #FADADD; /* Safari */
+    }
+    ::-moz-selection {
+    background: #FADADD; /* Firefox */
+    }
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+  }
+
+/* HEADER SETTINGS */
+.header{
+    background-color: #F19CBB;
+    border-radius: 4px;
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+
+/* Header Logo */
+.header-top-logo{
+    margin-right: 100vh;
+    display: flex;
+}
+
+.header-top-img{
+    margin-top: 0.5vh;
+    width: 7vh;
+    height: 7vh;
+    
+}
+
+.header-top-title{
+    font-size: 3vh;
+    font-weight: 800;
+    margin-top: 1.9vh;
+    padding-left: 3vh;
+}
+
+/*---------------------*/
+
+.nav-link{
+    position: relative;
+    color: #39262D;
+    margin-right: 3vh;
+
+    font-weight: 700;
+    display: inline-flex;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: '';
+    display: inline-flex;
+    height: 0.05vw;
+    background-color: white;
+    top: 3.2vh;
+  }
+  
+  
+  .nav-link:hover:after{
+      position: absolute;
+      width: 100%;
+      height: 0.3vh;
+  }
+
+/*---------------------*/
+
+
+/* TITLE */
+
+.title{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-title{
+    font-size: 5vh;
+    font-weight: 800;
+
+    padding-top: 7vh;
+    text-align: center;
+
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.main-subtitle{
+    font-size: 2.6vh;
+    font-weight: 600;
+
+    padding-top: 2vh;
+
+    text-align: center;
+
+    line-height: 4vh;
+
+    margin-left: 36vh;
+    margin-right: 36vh;
+}
+/*---------------------*/
+
+/*Service HOME PAGE*/
+/* title */
+.our_service_home_page{
+    margin-top: 5vh;
+    position: relative;
+    justify-content: center;
+}
+.our_service_home_title{
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+    font-size: 4vh;
+    font-weight: 800;
+    
+    text-align: center;
+}
+
+.our_service_home_img{
+    
+    width: 9vh;
+    height: 9vh;
+}
+
+
+
+/* Links */
+.our_service_home_links{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Добавлено для переноса карточек на новую строку */
+    
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 3vh;
+    margin-left: 35vh;
+    margin-right: 35vh;
+}
+
+.our_service_home_link{
+    padding: 3vh;
+}
+
+.our_service_home_link_img{
+    width: 15vh;
+    height: 15vh;
+    
+}
+
+.our_service_home_link_img:hover{
+    border: 3px solid #39262D;
+    border-radius: 10vh;
+    padding: 0.2vh;
+}
+
+.our_service_home_link_subtitle{
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-size: 1.9vh;
+}
+
+
+
+/*---------------------*/
+
+
+/* Nature Products */
+/*title*/
+.nature_products{
+    position: relative;
+    justify-content: center;
+
+}
+.nature_products_title{
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.nature_product_title_img{
+    
+    width: 8vh;
+    height: 8vh;
+}
+
+.nature_products_title{
+    font-size: 4vh;
+    font-weight: 800;
+
+    padding-top: 7vh;
+    text-align: center;
+
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+
+/* Subtitle */
+.nature_products_subtitle{
+    position: relative;
+
+    justify-content: center;
+
+    margin-top: 1vh;
+}
+
+.nature_poduct_subtitle{
+    font-size: 2.6vh;
+    font-weight: 600;
+
+    padding-top: 2vh;
+
+    text-align: center;
+
+    line-height: 4vh;
+
+    margin-left: 36vh;
+    margin-right: 36vh;
+}
+
+/* product cards */
+.products_cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Добавлено для переноса карточек на новую строку */
+    
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 3vh;
+    margin-left: 35vh;
+    margin-right: 35vh;
+}
+
+.product_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 2vh; /* Уменьшен отступ для сближения карточек */
+    padding: 2vh;
+    width: calc(30% - 4vh); /* Устанавливаем ширину карточки с учетом отступов */
+}
+
+.nature_product_card_title{
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-size: 1.9vh;
+}
+
+.product_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.nature_product_card_img {
+    width: 28vh;
+    height: 30vh;
+}
+
+/*---------------------*/
+
+/* Contact us home */
+.contact_us_home_content{
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+
+    margin-top: 5vh;
+}
+
+.contact_us_home{
+    position: relative;
+
+}
+
+.contact_us_home_title{
+    font-size: 5vh;
+    font-weight: 800;
+
+    padding-top: 7vh;
+    text-align: center;
+
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.contact_us_home_subtitle{
+    font-size: 3vh;
+    font-weight: 600;
+
+    padding-top: 2vh;
+
+    text-align: center;
+
+    line-height: 4vh;
+
+    margin-left: 36vh;
+    margin-right: 36vh;
+}
+
+/* Contact mini map*/
+.mini-map{
+    position: relative;
+    margin-right: 19vh; /* Расстояние между картой и формой */ 
+    text-align: center;
+}
+
+.mini-map-title{
+    margin-bottom: 1.5vh;
+}
+
+.mini-map-map{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid #39262D;
+    border-radius: 7vh;
+    width: 50vh;
+    height: 40vh;
+}
+
+/* Contact form home */
+
+.contact_us_home_form-title{
+    margin-bottom: 1.5vh;
+}
+
+.contact_us_home_form{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+
+    text-align: center;
+
+    font-weight: 600;
+  
+}
+ 
+.dataForm_home{ 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    width: 35vh; /* Ширина формы */ 
+
+    padding: 20px; 
+
+    border: 1px solid #39262D; 
+    border-radius: 5px; 
+
+    margin-top: 1vh; /* Расстояние между формой и заголовками */ 
+}
+
+.feedback-input{
+    outline: none;
+
+    color: #39262D;
+
+    font-family: 'Exo2';
+    font-size: 2.5vh;
+
+    line-height: 0.2vh;
+
+    height: 3.5vh;
+    width: 30vh;
+
+    background-color: #FFDBE6;
+
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+
+    border: 0.3vh solid #39262D;
+    border-bottom: 0.3vh solid #39262D;
+}
+
+.feedback-submit{
+    width: 20vh;
+    height: 4vh;
+
+    border: 0px solid transparent;
+
+    cursor: pointer;
+
+    background-color: #39262D;
+    color: #FFDBE6;
+
+    font-size: 2vh;
+    transition: all 0.3s;
+}
+
+.feedback-submit:hover{
+    background-color: #FFDBE6;
+    color: #39262D ;
+    border: 0.4vh solid #39262D;
+}
+
+
+/*---------------------*/

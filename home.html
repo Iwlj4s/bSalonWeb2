@@ -1,22 +1,167 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Отправка данных</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <form id="dataForm" action="send_email.php" method="post">
-        <label name="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label name="phone">Телефон:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <br>
-        <label name="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <input type="submit" name="send" value="Отправить">
-    </form>
-    <script src="js/main.js"></script>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+
+                <div class="header-top-logo">
+                    <img src="img/logo.png" alt="" class="header-top-img">
+                    <div class="header-top-title">Элеганс</div>
+                </div>
+
+                <nav class="nav">
+                    <a href="#" class="nav-link">Главная</a>
+                    <a href="service.html" class="nav-link">Услуги и цены</a>
+                    <a href="contact.html" class="nav-link">Контакты</a>
+                </nav>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- TITLE -->
+    <section class="title">
+        <div class="container">
+            <h2 class="main-title">Салон красоты Элеганс - это место, где каждая деталь создана для Вашего комфорта и удовлетворения Ваших потребностей. </h2><br>
+            <h2 class="main-subtitle">Наши профессиональные стилисты и косметологи всегда готовы предложить Вам лучшие услуги по уходу за волосами, кожей лица и тела.</h2>
+        </div>
+    </section>
+
+    <section class="our_service_home_page">
+        <div class="our_service_home_title">
+            <img class="our_service_home_img" src="img/service_home.png" alt="">
+            <h2 class="our_service_home_title_title">Наши услуги</h2>
+        </div>
+
+        <div class="our_service_home_links">
+
+            <div class="our_service_home_link">
+                <div class="container">
+                    <a class="our_service_home_link_link" href="service.html"><img class="our_service_home_link_img" src="img/hair.png" alt=""></a>
+                    <h4 class="our_service_home_link_subtitle">Моделирование прически</h4>
+                </div>
+            </div>
+
+            <div class="our_service_home_link">
+                <div class="container">
+                    <a class="our_service_home_link_link" href="service.html"><img class="our_service_home_link_img" src="img/manicure.png" alt=""></a>
+                    <h4 class="our_service_home_link_subtitle">Маникюр и педикюр</h4>
+                </div>
+            </div>
+
+            <div class="our_service_home_link">
+                <div class="container">
+                    <a class="our_service_home_link_link" href="service.html"><img class="our_service_home_link_img" src="img/sauna.png" alt=""></a>
+                    <h4 class="our_service_home_link_subtitle">SPA-процедуры</h4>
+                </div>
+            </div>
+
+            <div class="our_service_home_link">
+                <div class="container">
+                    <a class="our_service_home_link_link" href="service.html"><img class="our_service_home_link_img" src="img/makeup.png" alt=""></a>
+                    <h4 class="our_service_home_link_subtitle">Макияж</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NATURE PRODUCTS -->
+    <section class="nature_products">
+        <div class="nature_products_title">
+            <img class="nature_product_title_img" src="img/nature_product.png" alt="">
+            <h2 class="nature_product_title">Натуральные продукты</h2>
+        </div>
+
+        <div class="nature_products_subtitle">
+            <h2 class="nature_poduct_subtitle">Мы используем только натуральные и эффективные косметические средства, которые подходят для всех типов кожи и волос.</h2>
+        </div>
+
+        <div class="products_cards">
+            <div class="product_card">
+                <div class="container">
+                    <img class="nature_product_card_img" src="img/nature_product_img.png" alt="Avatar"">
+                    <h4 class="nature_product_card_title"><b>Супер шампунь "название продукта"</b></h4>
+                    <p>2200 руб.</p>
+                  </div>
+            </div>
+
+            <div class="product_card">
+                <div class="container">
+                    <img class="nature_product_card_img" src="img/nature_product_img.png" alt="Avatar"">
+                    <h4 class="nature_product_card_title"><b>Супер бальзам "название продукта"</b></h4>
+                    <p>1200 руб.</p>
+                  </div>
+            </div>
+
+            <div class="product_card">
+                <div class="container">
+                    <img class="nature_product_card_img" src="img/nature_product_img.png" alt="Avatar"">
+                    <h4 class="nature_product_card_title"><b>Супер маска "название продукта"</b></h4>
+                    <p>3200 руб.</p>
+                  </div>
+            </div>
+
+            <div class="product_card">
+                <div class="container">
+                    <img class="nature_product_card_img" src="img/nature_product_img.png" alt="Avatar"">
+                    <h4 class="nature_product_card_title"><b>Супер крем "название продукта"</b></h4>
+                    <p>1000 руб.</p>
+                  </div>
+            </div>
+
+            <div class="product_card">
+                <div class="container">
+                    <img class="nature_product_card_img" src="img/nature_product_img.png" alt="Avatar"">
+                    <h4 class="nature_product_card_title"><b>Супер крем "название продукта"</b></h4>
+                    <p>1300 руб.</p>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_us_home">
+        <div class="container">
+            <h2 class="contact_us_home_title">Элеганс - это не только уход за внешностью, но и забота о Вашем душевном равновесии.</h2>
+            <h2 class="contact_us_home_subtitle">Приходите и насладитесь моментом красоты и спокойствия в наших стенах.</h2>
+        </div>
+
+        <div class="contact_us_home_content">
+            <div class="container">
+                <div class="mini-map">
+                    <h3 class="mini-map-title">Где нас найти</h3>
+                    <iframe class="mini-map-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3288ecbd8dcb8ccb315f848a7cf2c7621616aecd557f5473dd9dc2694612ab35&amp;source=constructor"></iframe>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="contact_us_home_form">
+                    <h3 class="contact_us_home_form-title">Заказать обратный звонок</h3>
+                    <form class="dataForm_home" id="dataForm" action="send_email.php" method="post">
+                        <label name="name">Имя:</label>
+                        <input class="feedback-input" type="text" id="name" name="name" required>
+                        <br>
+                        <label name="phone">Телефон:</label>
+                        <input class="feedback-input" type="tel" id="phone" name="phone" required>
+                        <br>
+                        <label name="email">Email:</label>
+                        <input class="feedback-input" type="email" id="email" name="email" required>
+                        <br>
+                        <input class="feedback-submit" type="submit" name="send" value="Отправить">
+                    </form>
+                    <script src="js/main.js"></script>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>

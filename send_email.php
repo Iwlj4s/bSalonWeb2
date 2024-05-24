@@ -24,12 +24,15 @@
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'send.handler.iwlj4s@gmail.com'; // Email who sends mail
+
+        // !!!!!! CLEAR THIS BEFORE COMMIT !!!!!! //
         $mail->Password = ''; // App Key from email
+        // !!!!!! CLEAR THIS BEFORE COMMIT !!!!!! //
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
     
         $mail->SetFrom('send.handler.iwlj4s@gmail.com'); // From who mail
-        $mail->addAddress('elizavetalenn@mail.ru'); // Where to go 
+        $mail->addAddress('get.handler.iwlj4s@gmail.com'); // Where to go 
         $mail->IsHTML(true);
     
         $mail->Subject = 'Заявка из салона';
@@ -44,7 +47,7 @@
             <script>
             alert('Message sent successfully!');
 
-            window.location.replace('home.html'); 
+            window.location.replace('contact.html'); 
             </script>
             ";
         }
