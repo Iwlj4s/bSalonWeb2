@@ -36,7 +36,7 @@
         $mail->IsHTML(true);
     
         $mail->Subject = 'Заявка из салона';
-        $mail->Body = 'Клиент '.$name.' ждет обратного звонка '.$phone.''.$email;
+        $mail->Body = 'Клиент '.$name.' ждет обратного звонка '.$phone.' '.$email;
         $mail->AltBody = '';
     
         if (!$mail->send()){
@@ -47,7 +47,7 @@
             <script>
             alert('Message sent successfully!');
 
-            window.location.replace('contact.html'); 
+            window.location.replace('home.html'); 
             </script>
             ";
         }

@@ -133,6 +133,7 @@ img {
 }
 /*---------------------*/
 
+/* HOME PAGE */
 /*Service HOME PAGE*/
 /* title */
 .our_service_home_page{
@@ -424,5 +425,66 @@ img {
     border: 0.4vh solid #39262D;
 }
 
-
 /*---------------------*/
+/*---------------------*/
+
+/* SERVICE BLOCK */
+.our_service{
+    position: relative;
+    justify-content: center;
+}
+
+.service{
+    position: relative;
+    justify-content: center;
+}
+
+.service_w_m{
+    margin-top: 6vh;
+}
+
+.service_title {
+    font-size: 3.5vh;
+    font-weight: 800;
+
+    text-align: center;
+
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.service_cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Добавлено для переноса карточек на новую строку */
+    
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 3vh;
+    margin-left: 35vh;
+    margin-right: 35vh;
+}
+
+.service-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 2vh; /* Уменьшен отступ для сближения карточек */
+    padding: 2vh;
+    width: calc(30% - 4vh); /* Устанавливаем ширину карточки с учетом отступов */
+}
+
+.service-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.service_card_img{
+    width: 25vh;
+    height: 25vh;
+}
+
+.service_card_title{
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    font-size: 1.9vh;
+}
