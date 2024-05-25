@@ -25,18 +25,65 @@
         </div>
     </header>
 
-    <form class="dataForm_contact" id="dataForm" action="send_email.php" method="post">
-        <label name="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label name="phone">Телефон:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <br>
-        <label name="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <input type="submit" name="send" value="Отправить">
-    </form>
-    <script src="js/main.js"></script>
+    <section class="contacts">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="contacts_title">
+                    <h2>Контакты</h2>
+                </div>
+
+                <div class="contacts_content">
+                    
+                    <!-- CONTACS PHONE -->
+                    <div class="contacts_phone">
+                        <div class="contacts_block_title">Телефон</div>
+                        <div class="contacts_block_item">
+                            <a href="tel:+7 (000) 00-00-00">+7 (000) 00-00-00</a>
+                            <div class="contacts_block_item_worktime">Ежедневно с 9:00 до 21:00</div>
+                        </div>
+                    </div>
+                    <!-- ---- -->
+
+                    <!-- CONTACTS ADDRESS -->
+                    <div class="contacts_address">
+                        <div class="contacts_block_title">Адрес</div>
+                        <div class="contacts_block_item">
+                            <div class="contacts_block_address">Г. Череповец, Советский пр. 51</div><br>
+                            <div class="contacts_block_email">
+                                <a href="mailto:get.handler.iwlj4s@gmail.com">get.handler.iwlj4s@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---- -->
+
+                    <div class="contacts_form"> 
+                        <div class="contacts_form_title">Заказть обратный звонок</div> 
+                        <form class="dataForm_contact" id="dataForm" action="send_email.php" method="post"> 
+                            <label for="name">Имя:</label> 
+                            <input class="feedback-input_contact" type="text" id="name" name="name" required> 
+                            <br> 
+                            <label for="phone">Телефон:</label> 
+                            <input class="feedback-input_contact" type="tel" id="phone" name="phone" required> 
+                            <br> 
+                            <label for="email">Email:</label> 
+                            <input class="feedback-input_contact" type="email" id="email" name="email" required> 
+                            <br> 
+                            <input class="feedback-submit_contact" type="submit" name="send" value="Отправить"> 
+                        </form> 
+                        <script src="js/main.js"></script> 
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mini-map-contact">
+            <iframe class="mini-map-map-contact" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3288ecbd8dcb8ccb315f848a7cf2c7621616aecd557f5473dd9dc2694612ab35&amp;source=constructor"></iframe>
+    </section>
+
 </body>
 </html>

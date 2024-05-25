@@ -21,6 +21,10 @@ body{
 
 }
 
+a{
+    color: #39262D;
+}
+
 /* SELECTION SETTINGS */
 ::selection {
     background: #FADADD; /* Safari */
@@ -84,8 +88,10 @@ img {
     content: '';
     display: inline-flex;
     height: 0.05vw;
-    background-color: white;
+    background-color: #ffd4e1;
     top: 3.2vh;
+
+    transition: 0.1s;
   }
   
   
@@ -488,3 +494,159 @@ img {
     margin-bottom: 0.5vh;
     font-size: 1.9vh;
 }
+/*---------------------*/
+
+
+/* CONTACTS PAGE */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5vh;
+}
+
+.contacts_title{
+    margin-bottom: 5vh;
+}
+
+.contacts_content{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 11vh;
+    position: relative;
+
+    font-weight: 500;
+}
+
+.contacts_phone{
+    border-right: 0.2vh solid #39262D;
+
+    padding-right: 10vh;
+    margin-right: 5vh;
+}
+
+.contacts_block_title{
+    font-weight: 600;
+
+    margin-bottom: 3vh;
+}
+
+.contacts_block_item{
+    position: relative;
+}
+
+.contacts_block_item_worktime{
+    position: absolute;
+
+    top: 5vh;
+
+    -ms-flex-preferred-size: 100%;
+
+    flex-basis: 100%;
+
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contacts_address{
+    padding-right: 10vh;
+
+    border-right: 0.2vh solid #39262D;
+
+    margin-right: 44vh;
+}
+
+
+
+/* CONTACT FORM SETTINGS */
+
+.contacts_form{
+    position: absolute;
+    right: 0;
+}
+
+
+.dataForm_contact{ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+
+    width: 35vh; 
+
+    padding: 20px; 
+
+    border: 1px solid #39262D; 
+    border-radius: 5px; 
+
+    margin-top: 1vh;  
+}
+
+.feedback-input_contact{
+    outline: none; 
+
+    color: #39262D; 
+
+    font-family: 'Exo2'; 
+    font-size: 2.5vh; 
+
+    line-height: 0.6vh; 
+
+    height: 3.5vh; 
+    width: 30vh; 
+
+    background-color: #FFDBE6; 
+
+    padding: 0.5vh; 
+    margin-bottom: 3vh; 
+
+    border: 0.3vh solid #39262D; 
+    border-bottom: 0.3vh solid #39262D; 
+}
+
+.feedback-submit_contact{
+    width: 20vh; 
+    height: 4vh; 
+
+    border: 0px solid transparent; 
+
+    cursor: pointer; 
+
+    background-color: #39262D; 
+    color: #FFDBE6; 
+
+    font-size: 2vh; 
+
+    transition: all 0.3s; 
+}
+
+.feedback-submit_contact:hover{
+    background-color: #FFDBE6; 
+    color: #39262D; 
+
+    border: 0.4vh solid #39262D; 
+}
+
+/* CONTACT MINI MAP  */
+.mini-map-contact{
+    text-align: center;
+    margin-top: 2.5vh;
+    margin-right: 24vh;
+}
+
+.mini-map-map-contact{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px solid #39262D;
+    border-radius: 3vh;
+    width: 90vh;
+    height: 30vh;
+}
+
+
+/*---------------------*/
+
