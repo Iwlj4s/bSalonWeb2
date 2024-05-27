@@ -11,6 +11,20 @@ body{
     color:#39262D;
 }
 
+/* SCROLL BAR SETTINGS FOR CHROME/EDGE/SAFARI */
+body::-webkit-scrollbar {
+    width: 1.2vh;               /* ширина всей полосы прокрутки */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #F19CBB        /* цвет зоны отслеживания */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #39262D;    /* цвет бегунка */
+    border-radius: 1vh;       /* округлось бегунка */
+  }
+
 
 *{
     margin: 0;
@@ -347,7 +361,7 @@ img {
     text-align: center;
 
     line-height: 3vh;
-    
+
     margin-left: 25vh;
     margin-right: 25vh;
 }
