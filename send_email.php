@@ -32,12 +32,27 @@
         $mail->Port = 465;
     
         $mail->SetFrom('send.handler.iwlj4s@gmail.com'); // From who mail
-        $mail->addAddress('get.handler.iwlj4s@gmail.com'); // Where to go 
+        $mail->addAddress('iwlj4s@inbox.ru'); // Where to go 
         $mail->IsHTML(true);
     
         $mail->Subject = 'Заявка из салона';
-        $mail->Body = 'Клиент '.$name.' ждет обратного звонка '.$phone.' '.$email;
-        $mail->AltBody = '';
+        $mail->Body = ' 
+        <html> 
+        <head> 
+            <title>Заявка из салона</title> 
+        </head> 
+        <body> 
+            <p>Уважаемый сотрудник,</p> 
+            <p>Была получена заявка от клиента '.$name.'. Он ждет обратного звонка по следующим контактным данным:</p> 
+            <ul> 
+                <li>Телефон: '.$phone.'</li> 
+                <li>Email: '.$email.'</li> 
+            </ul> 
+            <p>С уважением,<br>Команда салона</p> 
+        </body> 
+        </html> 
+        '; 
+        $mail->AltBody = ''; 
     
         if (!$mail->send()){
             echo 'Error';
