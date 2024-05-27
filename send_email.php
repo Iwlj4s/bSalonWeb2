@@ -53,18 +53,45 @@
         </html> 
         '; 
         $mail->AltBody = ''; 
-    
+
+
         if (!$mail->send()){
             echo 'Error';
         }
         else{
+            $mail->ClearAllRecipients();
             echo "
             <script>
             alert('Message sent successfully!');
 
-            window.location.replace('home.html'); 
+            window.location.replace('index.html'); 
             </script>
             ";
+
+            // add the address user
+            $mail->addAddress($email); // Where to go 
+        
+            $mail->Subject = 'Заявка из салона';
+            $mail->Body = ' 
+            <html> 
+            <head> 
+                <title>Заявка из салона</title> 
+            </head> 
+            <body> 
+                <p>Уважаемый клиент!</p> 
+                <p>Вы отправили следующие контактные данные:</p> 
+                <ul> 
+                    <li>Имя: '.$name.'</li> 
+                    <li>Телефон: '.$phone.'</li> 
+                    <li>Email: '.$email.'</li> 
+                </ul> 
+                <p>для обратного звонка от администратора.</p> 
+                <p>Пожалуйста ожидайте, Вам скоро перезвонят!</p>
+                <p>С уважением,<br>Команда салона</p> 
+            </body> 
+            </html>'; 
+
+            $mail->send();
         }
     }
 
